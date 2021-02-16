@@ -12,9 +12,33 @@
 
 <body>
     <p>
-        I made it Mom!
+        I made it <a href="pages/about.html">Mom</a> !
     </p>
+    <!-- 
+        Bilden nedan är en "absolut" adress till filen codic.png
+
+        Den börjar i "/" som kallas för "webroot" när det rör sig om en hemsideadress
+        men bara "root" eller "driver" C:/ på windows.
+    -->
     <img src="/img/codic.png" alt="">
+    <!-- 
+        En relativ adress har inte den första slashen utan är en påbyggnad
+        utifrån där vi är.
+
+        Tex för pathen nedan här så är vi just nu där index.html är.
+
+        Om vi testar lokalt så är det ju http://127.0.0.1:5500/index.html
+        men om vi är uppe på GitHub Pages så är det på 
+        https://ec-utblidningar-web20-csharp-intro.github.io/JS-project-example/index.html
+
+        Så om vi skriver som nedan så är den faktiska adressen till bilden blir
+        http://127.0.0.1:5500/img/codic.png
+        eller
+        https://ec-utblidningar-web20-csharp-intro.github.io/JS-project-example/img/codic.png
+        beroende på sammanhanget, och vilken html-fil den 
+        relativa adressen befinner sig i.
+    -->
+    <img src="img/codic.png" alt="">
 </body>
 
 </html>

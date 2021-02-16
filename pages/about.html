@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Kommentera ut <base> för att testa vad som händer utan -->
+    <!-- <base href="../"> -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p>Mom is an amazing being and the reason I am alive today.</p>
+    <!-- 
+        Bilden nedanför kommer inte att fungera för about.html 
+        ligger inte i webroot utan i /pages/
+
+        Relativa adressen blir /pages/img/codic.png
+     -->
+    <img src="img/codic.png" alt="">
+    <!-- 
+        Om vi istället backar ett steg så hamnar vi rätt,
+        så länge about.html ligger en folder bort från webroot.
+
+        Relativa adressen blir /pages/../img/codic.png
+     -->
+    <img src="../img/codic.png" alt="">
+    <!-- 
+        Detta är inte så bra om vi flyttar runt på html filer
+        eller copy-pastar länkar mellan html filer.
+
+        Det är därför vi kan använda <base> taggen som modifierar
+        alla relativa adresser på sidan.
+        
+        Relativa adressen blir /pages/../img/codic.png
+     -->
+    <img src="img/codic.png" alt="">
+</body>
+
+</html>
