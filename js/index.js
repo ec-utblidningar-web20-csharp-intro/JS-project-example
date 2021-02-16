@@ -1,9 +1,9 @@
-alert("Nu registreras 'DOMContentLoaded' eventhandlern");
+console.log("Nu registreras 'DOMContentLoaded' eventhandlern");
 document.addEventListener("DOMContentLoaded", function () {
-  alert("Nu händer 'DOMContentLoaded' eventet");
+  console.log("Nu händer 'DOMContentLoaded' eventet");
 });
 
-alert("Nu registreras 'window.onload' eventhandlern");
+console.log("Nu registreras 'window.onload' eventhandlern");
 window.onload = function () {
-  alert("Nu händer 'window.onload' eventet");
+  console.log("Nu händer 'window.onload' eventet");
 };

@@ -10,24 +10,22 @@
     <link rel="stylesheet" href="style.css">
 
     <script>
-        alert("Nu händer <script> i <head>");
+        console.log("Nu händer <script> i <head>");
     </script>
-    <script defer="true">
-        alert("Nu händer <script defer='true'>");
-    </script>
+    <script defer="true" src="js/defer-test.js"></script>
     <script src="js/index.js"></script>
 </head>
 
 <body>
     <script>
-        alert("Nu händer <script> först i <body>");
+        console.log("Nu händer <script> först i <body>");
     </script>
     <p>
         I made it <a href="pages/about.html">Mom</a> !
     </p>
 
     <script>
-        alert("Nu händer <script> innan <img> element finns.\n" + document.images);
+        console.log("Nu händer <script> innan <img> element finns.\nCount:" + document.images.length);
     </script>
     <!-- 
         Bilden nedan är en "absolut" adress till filen codic.png
@@ -56,7 +54,7 @@
     <img src="img/codic.png" alt="">
 
     <script>
-        alert("Nu händer <script> när <body> är klar");
+        console.log("Nu händer <script> när <body> är klar\nCount:" + document.images.length);
     </script>
 </body>
 
