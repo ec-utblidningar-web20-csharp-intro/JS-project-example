@@ -9,11 +9,16 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <script src="js/undefined-test.js"></script>
+    <!-- 
+        Massa <script> element för att testa 
+        när JS-kod faktiskt körs
+    -->
     <script>
         console.log("Nu händer <script> i <head>");
     </script>
     <script defer="true" src="js/defer-test.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/page-load-test.js"></script>
 </head>
 
 <body>
