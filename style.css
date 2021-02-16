@@ -1,0 +1,13 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  margin: auto;
+}
+
+p {
+  font-size: xx-large;
+  text-align: center;
+}
