@@ -8,12 +8,27 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <script>
+        alert("Nu händer <script> i <head>");
+    </script>
+    <script defer="true">
+        alert("Nu händer <script defer='true'>");
+    </script>
+    <script src="js/index.js"></script>
 </head>
 
 <body>
+    <script>
+        alert("Nu händer <script> först i <body>");
+    </script>
     <p>
         I made it <a href="pages/about.html">Mom</a> !
     </p>
+
+    <script>
+        alert("Nu händer <script> innan <img> element finns.\n" + document.images);
+    </script>
     <!-- 
         Bilden nedan är en "absolut" adress till filen codic.png
 
@@ -39,6 +54,10 @@
         relativa adressen befinner sig i.
     -->
     <img src="img/codic.png" alt="">
+
+    <script>
+        alert("Nu händer <script> när <body> är klar");
+    </script>
 </body>
 
 </html>
