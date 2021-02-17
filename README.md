@@ -1,8 +1,8 @@
 # JS-project-example
 
-[My GitHub Pages page](https://ec-utblidningar-web20-csharp-intro.github.io/JS-project-example/)
+[En länk till GitHub Pages sidan](https://ec-utblidningar-web20-csharp-intro.github.io/JS-project-example/)
 
-# Hur man använder GitHub Pages
+### Hur man använder GitHub Pages
 
 1. Se till att det finns en index.html fil i toppen av projektet.
 2. Gå in på repositoryts inställningar och scrolla ner till 'GitHub Pages' sektionen
